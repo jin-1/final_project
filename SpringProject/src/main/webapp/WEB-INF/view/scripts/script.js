@@ -402,22 +402,53 @@ $(document).ready(function() {
 
 	});
 	
-	$("#inputStrat:text").keyup(function() {
-		$(".trainList").css("display","block");
+	$("#inputStrat:text").keyup(function(e) {
+		var code = e.which;
+		$("#trainList1").css("display","block");
 		var k = $(this).val();
 	
-		$(".trainList li").hide();
-		$(".trainList li:contains('" + k + "')").css("display","block");
+		$("#trainList1 li").hide();
+		$("#trainList1 li:contains('" + k + "')").css("display","block");
+		if(code==13){
+			$("#trainList1").css("display","none");
+			$("#stStation").html($('#inputStrat').val());
+			$('#inputStrat').blur();
+		}
 	});
 
-	$(".trainList ul").on("click", "li",function() {
-        alert($(this).text());
+	$("#trainList1 ul").on("click", "li",function() {
+		$("#stStation").html($(this).text());
+		$("#trainList1").css("display","none");
     });
-	$('#inputStrat').blur(function(){
-		$(".trainList").css("display","none");
+	$('#trainList1').blur(function(){
+		$("#trainList1").css("display","none");
 		$("#stStation").html($('#inputStrat').val());
 		
 	});
 
+	
+	$("#inputEnd:text").keyup(function(e) {
+		var code = e.which;
+		$("#trainList2").css("display","block");
+		var k = $(this).val();
+	
+		$("#trainList2 li").hide();
+		$("#trainList2 li:contains('" + k + "')").css("display","block");
+		if(code==13){
+			$("#trainList2").css("display","none");
+			$("#edStation").html($('#inputEnd').val());
+			$('#inputEnd').blur();
+		}
+	});
+
+	$("#trainList2 ul").on("click", "li",function() {
+		$("#edStation").html($(this).text());
+		$("#trainList2").css("display","none");
+    });
+	$('#trainList2').blur(function(){
+		$("#trainList2").css("display","none");
+		$("#edStation").html($('#inputEnd').val());
+		
+	});
 	
 });

@@ -16,7 +16,7 @@
 <body>
 	<div class="tbg"></div>
 	<div class="tbgw">
-		<div></div>
+		<div style="text-align:center;"><H2>도시를 지정해주세요</H2></div>
 	</div>
 
 	<div id="top">
@@ -50,23 +50,27 @@
 			<hr class="style11">
 			<div class="oneWay">
 				<label class="inputtext control--text"> <span
-					class="inputtext__indicator" id="stStation">출발지</span> 
-					<img id="startTrain" class="pinmark"
+					class="inputtext__indicator" id="stStation">출발지</span> <img
+					id="startTrain" class="pinmark"
 					src="http://download.seaicons.com/icons/paomedia/small-n-flat/1024/map-marker-icon.png">
 					<input type="text" id="inputStrat" name="startTrain"></label> <label
 					class="inputtext control--text"> <span
-					class="inputtext__indicator">도착지</span> <input type="text"
-					name="text"> <img id="endTrain" class="pinmark"
+					class="inputtext__indicator" id="edStation">도착지</span> 
+					<input type="text" id="inputEnd" name="endTrain"> <img id="endTrain" class="pinmark"
 					src="http://download.seaicons.com/icons/paomedia/small-n-flat/1024/map-marker-icon.png">
 				</label> <label class="inputtext control--text"> <span
-					class="inputtext__indicator">출발일</span> <img class="pinmark" id="dateTrain"
+					class="inputtext__indicator">출발일</span> <img class="pinmark"
+					id="dateTrain"
 					src="http://download.seaicons.com/icons/paomedia/small-n-flat/1024/calendar-icon.png">
 					<input type="text" name="text">
 				</label>
 			</div>
-			<div class="trainList" style="display: none;">
+			<div class="trainList" id="trainList1" style="display: none;">
 				<ul>
-					
+				</ul>
+			</div>
+			<div class="trainList" id="trainList2" style="display: none;">
+				<ul>
 				</ul>
 			</div>
 			<hr class="style3">

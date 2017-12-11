@@ -410,9 +410,14 @@ $(document).ready(function() {
 		$(".trainList li:contains('" + k + "')").css("display","block");
 	});
 
-
-
-	$(".trainList li").on("click", function() {
+	$(".trainList ul").on("click", "li",function() {
         alert($(this).text());
     });
+	$('#inputStrat').blur(function(){
+		$(".trainList").css("display","none");
+		$("#stStation").html($('#inputStrat').val());
+		
+	});
+
+	
 });

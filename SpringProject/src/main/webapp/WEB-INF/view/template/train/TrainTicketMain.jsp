@@ -50,7 +50,7 @@
 			<hr class="style11">
 			<div class="oneWay">
 				<label class="inputtext control--text"> <span
-					class="inputtext__indicator">출발지</span> 
+					class="inputtext__indicator" id="stStation">출발지</span> 
 					<img id="startTrain" class="pinmark"
 					src="http://download.seaicons.com/icons/paomedia/small-n-flat/1024/map-marker-icon.png">
 					<input type="text" id="inputStrat" name="startTrain"></label> <label

@@ -21,5 +21,6 @@
 	</environments>
 	<mappers>
 		<mapper resource="mapper/Mapper.xml" />
+		<mapper resource="mapper/TrainMapper.xml" />
 	</mappers>
 </configuration>

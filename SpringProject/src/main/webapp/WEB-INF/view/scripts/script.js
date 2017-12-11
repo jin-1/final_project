@@ -381,23 +381,38 @@ $(document).ready(function() {
 		$('.tbgw').css('display', 'inline');
 	});
 	
-	
-	
-	$("#inputStrat:text").keydown(function(e) {
+	$.ajax({
+		url : "startTrain",
+		dataType : "json",
+		type : "post",
+		data : $('#inputStrat').serializeArray(),
+		success : function(data) {
+			
+			var trainLength = Object.keys(data).length;
+		
+			$.each(data,function(key,value){
+				$('.trainList ul').append('<li>'+value+'</li>');
 
-		$.ajax({
-			url : "startTrain",
-			dataType : "json",
-			type : "post",
-			data : $('#inputStrat').serializeArray(),
-			success : function(data) {
-				alert("성공:" + data.KEY);
-			},
-			error : function(request, status, error) {
-				alert("code:" + request.status + "\n" + "error:" + error);
-			}
-
-		});
+			});
+		
+		},
+		error : function(request, status, error) {
+			console.log("code:" + request.status + "\n" + "error:" + error);
+		}
 
 	});
+	
+	$("#inputStrat:text").keyup(function() {
+		$(".trainList").css("display","block");
+		var k = $(this).val();
+	
+		$(".trainList li").hide();
+		$(".trainList li:contains('" + k + "')").css("display","block");
+	});
+
+
+
+	$(".trainList li").on("click", function() {
+        alert($(this).text());
+    });
 });

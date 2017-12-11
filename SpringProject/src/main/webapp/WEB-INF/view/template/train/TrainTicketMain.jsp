@@ -64,15 +64,9 @@
 					<input type="text" name="text">
 				</label>
 			</div>
-			<div class="trainList">
+			<div class="trainList" style="display: none;">
 				<ul>
-					<li>dd</li>
-					<li>dd</li>
-					<li>dd</li>
-					<li>dd</li>
-					<li>dd</li>
-					<li>dd</li>
-					<li>dd</li>
+					
 				</ul>
 			</div>
 			<hr class="style3">

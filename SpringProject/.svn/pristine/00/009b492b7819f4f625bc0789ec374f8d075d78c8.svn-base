@@ -1,0 +1,282 @@
+@font-face {
+	font-family: 'Nanum'; /* 폰트 패밀리 이름 주기*/
+	src: url('../fonts/NanumGothicExtraBold.ttf'); /*폰트 파일 주소*/
+}
+
+@font-face {
+	font-family: 'norwester'; /* 폰트 패밀리 이름 주기*/
+	src: url('../fonts/norwester.otf'); /*폰트 파일 주소*/
+}
+
+#sideMenu {
+	width: 205px;
+	height: auto;
+	position: relative;
+	border-right: 1px solid #acacad;
+	border-left: 1px solid #acacad;
+	float: left;
+}
+
+#trainTitle {
+	display: table;
+	width: 100%;
+	height: 100px;
+	font-size: 20px;
+	font-weight: bold;
+	backgraund-color: #1155cc;
+	color: #3a3838;
+	font-family: 'Nanum' !important;
+}
+
+#trainTitle p {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#traingMenu {
+	display: table;
+	background-color: #1155cc;
+	width: 100%;
+	height: 50px;
+	color: white;
+	font-family: 'Nanum' !important;
+	font-weight: bold;
+	vertical-align: middle;
+	font-size: 13px;
+	box-shadow: 1px 3px 3px #888888;
+}
+
+#traingMenu p {
+	display: table-cell;
+	text-align: left;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+#traingMenu1 {
+	display: table;
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	font-family: 'Nanum' !important;
+	font-size: 11px;
+	vertical-align: middle;
+	border-bottom: 1px solid #acacad;
+}
+
+#traingMenu1 p {
+	display: table-cell;
+	text-align: left;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+#traingMenu2 {
+	display: table;
+	background-color: white;
+	width: 100%;
+	height: 50px;
+	color: #575757;
+	font-family: 'Nanum' !important;
+	font-weight: bold;
+	font-size: 11px;
+	vertical-align: middle;
+	border-bottom: 1px solid #acacad;
+}
+
+#traingMenu2 p {
+	display: table-cell;
+	text-align: left;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+
+#traingMenu1 a {
+	text-decoration: none;
+	color: #525252;
+}
+
+#traingMenu1 a:visited {
+	text-decoration: none;
+	color: #525252;
+}
+
+#traingMenu1 a:active {
+	text-decoration: none;
+	color: #525252;
+}
+
+#traingMenu1 a:hover {
+	text-decoration: none;
+	color: #525252;
+}
+
+#traingMenu2 a {
+	text-decoration: none;
+	color: #525252;
+}
+
+#traingMenu2 a:visited {
+	text-decoration: none;
+	color: #525252;
+}
+
+#traingMenu2 a:active {
+	text-decoration: none;
+	color: #525252;
+}
+
+#traingMenu2 a:hover {
+	text-decoration: none;
+	color: #525252;
+}
+
+#tarinInfoMain {
+	width: 100%;
+	position: releative;
+	height: auto;
+	float: right;
+	left: 230px;
+	top: 30px;
+}
+
+#trainName {
+	width: 100%;
+}
+
+#trainName span {
+	font-family: 'Nanum' !important;
+	font-size: 30px;
+	color: #2f2f2f;
+	font-weight: bold;
+}
+
+#trainInfoMenuTable {
+	width: 100%;
+	height: 650px;
+	font-family: 'Nanum' !important;
+	text-align: center;
+}
+
+#trainInfoMenuTable th {
+	background: #f8f8f8;
+}
+
+#trainInfoMenuTableR {
+	width: 100%;
+	width: 100%;
+	border-top: 2px solid #0097d0;
+	border-bottom: 2px solid #b6b6b6;
+	font-size: 12px;
+}
+
+#trainInfoMenuTableR th {
+	height: 20px;
+	background: #f8f8f8 url(../img/bar_th.gif) no-repeat left 50%;
+}
+
+#trainInfoMenuTableR td {
+	height: 30px;
+	border-bottom: 1px solid #b6b6b6;
+}
+
+#gb {
+	display: table-row;
+}
+
+#hn {
+	display: none;
+}
+
+#gj {
+	display: none;
+}
+
+#jr {
+	display: none;
+}
+
+#sudo {
+	display: table-row;
+}
+
+#cc {
+	display: none;
+}
+
+#gw {
+	display: none;
+}
+
+#gs {
+	display: none;
+}
+
+#jra {
+	display: none;
+}
+
+.paging {
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 30px;
+	text-align: center;
+}
+
+.pagination {
+	list-style: none;
+	margin: 0;
+	padding: 0 5px;
+}
+
+.pagination li {
+	display: inline;
+	padding: 4px;
+	margin-right: 3px;
+	width: 40px;
+	color: #000;
+	font: bold 13px tahoma;
+	border: 1px solid #eee;
+	text-align: center;
+	text-decoration: none;
+}
+
+.location {
+	font-family: 'Nanum' !important;
+	font-size: 13px;
+	font-weight: bold;
+	color: #525252;
+}
+
+.location a {
+	text-decoration: none;
+	color: #525252;
+}
+
+.location a:visited {
+	text-decoration: none;
+	color: #525252;
+}
+
+.location a:active {
+	text-decoration: none;
+	color: #525252;
+}
+
+.location a:hover {
+	text-decoration: none;
+	color: #525252;
+}
+
+<!--
+기차 티켓-->.trainTicket {
+	position: relative;
+	top: 100px;
+}
+
+.trainTicket table {
+	width: 80%;
+	margin: auto;
+}
